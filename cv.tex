@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{cv} % Use the resume class
+
+\usepackage{droidserif} % Use the EB Garamond font
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+
+%------------------------------------------------
+
+\name{António B. Linhares Oliveira} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{antonioliveira@protonmail.com $\cdot$ (+351) 968 615 284} % Main address
+
+\address{Porto, Portugal} % A secondary address (optional)
+
+\address{github.com/antonoliv} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{rSection}{Profile}
+	
+A detail-oriented and extroverted graduate fascinated by software development, data science and solving complex problems. An unconventional and creative thinker with excellent communication and conflict resolution skills acquired through years of extensive group work during college, where I often took a leadership role. Comfortable in an international and interdisciplinary environment and over a year of experience as an association manager.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsection}{Euronext Technologies}{October 2024 - Present}{AI Engineer}{Porto}
+		\item Designed and deployed an internal, language-agnostic Documentation Generation application targeting legacy codebases (COBOL, EGL, PL/1), significantly accelerating documentation efforts for teams facing extensive backlogs of undocumented legacy code.
+		\item Core maintainer of LLM Gateway, a Java microservice acting as the abstraction layer between internal systems and AI providers (Azure OpenAI, Amazon Bedrock), ensuring reliability, extensibility, and provider-agnostic integration.
+		\item Core maintainer of RAG Platform, a Python microservice leveraging LlamaIndex to expose RAG indexing and querying capabilities to internal applications, enabling semantic search and retrieval-augmented generation at scale.
+		\item Contributed to the development of MCP Gateway, a proxy application bridging remote and locally deployed MCP servers with developer tools such as GitHub Copilot — incorporating centralized SSO authentication, guardrails, and usage monitoring to abstract deployment and integration complexity from end users.
+		\item Drove key engineering standards across the team: pioneered the first fully production-deployed project using GitLab CI/CD and Terraform, and championed UV adoption for Python dependency management — reducing deployment overhead and freeing team capacity for development and innovation.
+		\item \textbf{Technologies}: Python · Docker · AWS · Azure · Terraform · Gitlab CI/CD · Amazon Bedrock · Azure OpenAI API · MCP
+	\end{rSubsection}
+
+	% \begin{rSubsection}{Tuna Académica do ISEP}{May 2023 - Present}{Association Manager - Director of Public Relations}{Porto}
+	% 	\item Voluntary Role
+	% 	\item Academic and non-profit musical association tied with ISEP
+	% 	\item Management of the association’s internal and external communications and presence on the board of directors
+	% 	\item Directly responsible for all stakeholder communications, including other Tunas, Clients and entities.
+	% 	\item Management of the organization’s calendar
+	% \end{rSubsection}
+
+	\begin{rSubsection}{Natixis}{April 2022 - July 2022}{Software Engineer Intern}{Porto}
+		\item Curricular Internship for the Bachelor’s degree in Informatics Engineering of ISEP
+		\item Development of a web application and data pipeline that integrates information from different platforms and processes of the company to facilitate the operations of a support team in the company
+		\item \textbf{Technologies}: PHP · jQuery · JavaScript · HTML/CSS · Bootstrap · SQL Server
+		\item \textbf{Grade}: 16 / 20
+	\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	
+	\begin{rSubsection}{Faculdade de Engenharia da Universidade do Porto}{September 2022 - September 2024}{Master's in Informatics and Computing Engineering}{}
+		\item Dissertation (in English) on ”Graph Reinforcement Learning for improving Smart Grid Services”, focusing on combining Reinforcement Learning algorithms with Graph Neural Networks to enhance intelligent system’s performance on graph-structured environments. Developed with Python, Gymnasium, PyTorch, Stable-Baselines3 and other libraries
+		\item \textbf{Disseration Grade}: 19 / 20
+		\item \textbf{Overall Grade}: 17 / 20
+	\end{rSubsection}
+	
+	\begin{rSubsection}{Instituto Superior de Engenharia do Porto}{September 2019 - June 2022}{Bachelor's in Informatics Engineering}{}
+		\item European Project Semester (ERASMUS) at Saxion University of Applied Sciences, in Enschede, Netherlands
+		\item Member of Tuna Académica do ISEP 
+		\item \textbf{Overall Grade}: 15 / 20
+	\end{rSubsection}
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\newpage
+\begin{rSection}{Technical Strengths}
+
+	\begin{table}[h!]
+		
+		\centering
+		\begin{tabularx}{\textwidth}{@{\hspace{1.5em}} @{} >{\bfseries}X @{\hspace{3ex}}p{68ex} @{\vspace{5pt}}}
+			Languages           & Portuguese (Native) $\cdot$ English (C2) $\cdot$ Spanish (B1) $\cdot$ French (A1) \\
+			Programming         & Python $\cdot$ Java $\cdot$ TypeScript $\cdot$ JavaScript $\cdot$ Kotlin $\cdot$ C $\cdot$ PHP $\cdot$ R $\cdot$ SQL $\cdot$ HTML/CSS $\cdot$ Bash \\
+			Generative AI       & Prompt Engineering $\cdot$ Agentic Systems $\cdot$ RAG $\cdot$ MCP $\cdot$ LlamaIndex $\cdot$ Amazon Bedrock $\cdot$ Azure OpenAI $\cdot$ GitHub Copilot $\cdot$ Claude Code $\cdot$ Opencode \\
+			Machine Learning    & PyTorch $\cdot$ scikit-learn $\cdot$ Gymnasium $\cdot$ pandas \\
+			Backend \& APIs     & FastAPI $\cdot$ SQLAlchemy $\cdot$ SpringBoot $\cdot$ JPA $\cdot$ REST $\cdot$ MVC \\
+			DevOps \& Cloud     & Linux $\cdot$ Docker $\cdot$ Terraform $\cdot$ GitLab CI/CD $\cdot$ AWS ECS $\cdot$ AWS Lambda \\
+			Databases           & PostgreSQL $\cdot$ MySQL $\cdot$ Oracle Database $\cdot$ Microsoft SQL Server $\cdot$ MongoDB $\cdot$ AWS S3
+		\end{tabularx}
+	\end{table}
+\end{rSection}
+
+\vspace{-2ex}
+
+\begin{rSection}{Projects}
+	
+	\begin{rSubsection}{Laboratory of Project Management (LGP)}{February 2023 - June 2023}{Smartwatch Triggered AI Enhanced (Sports) Video Highlight Experience}{FEUP}
+		\item Developed in partnership with MOG Technologies and the context of the LGP course of the Masters in Informatics and Computing Engineering of FEUP with a team of 11 students
+		\item Idealization of a startup, H4PRO (Highlights for PRO), around the main requested product: A smartphone and smartwatch application that connected with a visual sensor ecosystem in Padel fields and allowed the players to keep track of game score and save game highlights on-demand 
+		\item Assumed the role of the startup’s CTO and also took charge of wearable development
+		\item Sources: https://github.com/LGP-FEUP-2023/SC12
+		\item Pitch: https://www.youtube.com/watch?v=d5L8K53Xqys
+		\item \textbf{Technologies}: React Native · Kotlin
+		\item \textbf{Grade}: 18 / 20 (Highest of the group)
+	\end{rSubsection}
+	
+	\begin{rSubsection}{Large-Scale Software Development (DS)}{September 2022 - February 2023}{Circular Economy for the Built Environment Platform}{FEUP}
+		\item Carried out in partnership with Built COLAB and the context of the DS course of the Masters in Informatics and Computing Engineering of FEUP with a team of 23 students sub-divided into groups of 5/6 members
+		\item Developed a web platform for connecting sellers of raw materials produced from construction, renovation or demolition works with buyers that can bring new value to those same materials.
+		\item \textbf{Technologies}: FastAPI · Python · Vue.js · Docker · SQL · MVC · REST
+		\item \textbf{Grade}: 16 / 20
+	\end{rSubsection}		
+			
+	\begin{rSubsection}{European Project Semester}{September 2021 - February 2022}{Data-driven extended-life platform for reusable consumer electronics}{Saxion University}
+		\item Developed during ERASMUS mobility at Saxion University of Applied Sciences in Enschede, Netherlands with a team of 6 students from different academic backgrounds and nationalities
+		\item Research project on how electronic appliances and components are collected and repurposed. Met with several local Dutch appliance stores to study how the process can be optimized and scaled with information systems
+		\item Design and development of a proof-of-concept stock system composed of a REST API, web interface and a simple HTTP server
+		\item Sources: https://github.com/antonoliv/smartsolutions
+		\item \textbf{Technologies}: Java · HTML/CSS · JavaScript · Docker · SQL · MVC · REST
+		\item \textbf{Grade}: 8 / 10 (Highest of the group)
+	\end{rSubsection}
+	
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
